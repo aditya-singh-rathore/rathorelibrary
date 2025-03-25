@@ -1,4 +1,3 @@
-/* Keep your original reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -12,71 +11,69 @@ body {
   background-color: #f4f4f4;
 }
 
-/* New Header Styles */
 .header {
-    background-color: #000;
-    padding: 20px 0;
-    color: #fff;
+  background-color: #000;
+  padding: 20px 0;
+  color: #fff;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .header__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
 }
 
 .logo {
-    height: 50px;
-    margin-right: 15px;
+  height: 50px;
+  margin-right: 15px;
 }
 
 .header__title {
-    font-size: 1.8rem;
-    font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .nav {
-    width: auto;
+  width: auto;
 }
 
 .nav__list {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 .nav__item {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .nav__link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 8px 12px;
-    transition: color 0.3s ease, background-color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__link:hover {
-    color: #7CE7BE;
-    background-color: rgba(37, 47, 156, 0.2);
-    border-radius: 5px;
+  color: #7CE7BE;
+  background-color: rgba(37, 47, 156, 0.2);
+  border-radius: 5px;
 }
 
-/* Your original styles below remain unchanged */
 .hero-section {
   background-image: url('RL-main.jpg');
   background-size: cover;
@@ -106,8 +103,12 @@ body {
 }
 
 @keyframes gradientAnimation {
-  0% { background-position: 0% 0%; }
-  100% { background-position: 50% 50%; }
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
 
 .overlay h1:hover {
@@ -134,11 +135,18 @@ body {
   text-decoration: none;
   font-size: 1.2rem;
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .cta-btn:hover {
   background-color: #7CE7BE;
   color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.cta-btn:not(:hover) {
+  transform: translateY(0);
 }
 
 .about-section {
@@ -150,20 +158,25 @@ body {
   color: white;
 }
 
-.about-section, .reservation-section, .contact-section {
+.about-section,
+.reservation-section,
+.contact-section {
   background-size: cover;
   padding: 60px 20px;
   text-align: center;
 }
 
-.about-section h2, .reservation-section h2, .contact-section h2 {
+.about-section h2,
+.reservation-section h2,
+.contact-section h2 {
   background-color: #252F9C;
   color: white;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.about-section p, .contact-section p {
+.about-section p,
+.contact-section p {
   color: black;
   font-size: 1.2rem;
   max-width: 800px;
@@ -177,7 +190,7 @@ body {
   background-position: center;
   padding: 60px 20px;
   text-align: center;
-  color: white ;
+  color: white;
 }
 
 .reservation-section h2 {
@@ -203,7 +216,8 @@ form {
   width: 100%;
 }
 
-input, select {
+input,
+select {
   background-color: #7CE7BE;
   width: 100%;
   padding: 10px;
@@ -212,10 +226,14 @@ input, select {
   border-radius: 5px;
   font-size: 1rem;
   font-family: Montserrat;
+  transition: all 0.3s ease;
 }
 
-input:hover, select:hover {
+input:hover,
+select:hover {
   background-color: white;
+  border-color: #7CE7BE;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button {
@@ -229,11 +247,18 @@ button {
   cursor: pointer;
   margin-top: 10px;
   font-family: Montserrat;
+  transition: all 0.3s ease-in-out;
 }
 
 button:hover {
   background-color: white;
   color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+button:not(:hover) {
+  transform: translateY(0);
 }
 
 .pay-btn {
@@ -255,7 +280,8 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.contact-section p, p a {
+.contact-section p,
+p a {
   color: white;
   text-decoration: none;
 }
@@ -263,6 +289,7 @@ button:hover {
 .contact-section p a:hover {
   color: #252F9C;
   text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
 .map-container {
@@ -276,7 +303,6 @@ footer {
   text-align: center;
 }
 
-/* Your original mobile styles */
 @media screen and (max-width: 600px) {
   .header__inner {
     flex-direction: column;
@@ -309,11 +335,15 @@ footer {
     padding: 10px 20px;
   }
 
-  .about-section, .reservation-section, .contact-section {
+  .about-section,
+  .reservation-section,
+  .contact-section {
     padding: 30px 10px;
   }
 
-  .about-section h2, .reservation-section h2, .contact-section h2 {
+  .about-section h2,
+  .reservation-section h2,
+  .contact-section h2 {
     font-size: 2rem;
   }
 
@@ -325,7 +355,9 @@ footer {
     padding: 20px;
   }
 
-  input, select, button {
+  input,
+  select,
+  button {
     font-size: 0.9rem;
   }
 }
