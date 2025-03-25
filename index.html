@@ -6,24 +6,28 @@
     <title>Rathore Library</title>
     <link rel="icon" type="image/x-icon" href="RL-logo.png">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="header-content">
-                <img src="RL-logo.png" alt="Rathore Library Logo" class="logo">
-                <h1>Rathore Library</h1>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="logo-link">
+                    <img src="RL-logo.png" alt="Rathore Library Logo" class="logo">
+                    <h1 class="header__title">Rathore Library</h1>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#reservation" class="nav__link">Seat Reservation</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#reservation">Seat Reservation</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
+
+    <!-- Everything below remains unchanged from your original HTML -->
     <div class="hero-section">
         <div class="overlay">
             <h1>Rathore Library</h1>
@@ -77,12 +81,12 @@
         <p>Phone: <a href="tel:+919983891008">+91 9983891008</a></p>
         <p>Address: Rathore Library, Near Kunwa Police Station, Kunwa, Dungarpur, Rajasthan, India</p>
         <div class="map-container">
-            <iframe src="https://maps.google.com/maps?q=Rathore%20library,%20bhachar&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="250" frameborder="0"></iframe>
+            <iframe src="https://maps.google.com/maps?q=Rathore%20library,%20bhachar&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" frameborder="0"></iframe>
         </div>
     </section>
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Rathore Library. All rights reserved.</p>
+            <p>© 2025 Rathore Library. All rights reserved.</p>
         </div>
     </footer>
 </body>
