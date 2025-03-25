@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: black;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.header-container {
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+.header-container nav {
+  margin-top: 10px;
+}
+
+.logo {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+  padding: 0;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-list li a:hover {
+  color: #7CE7BE;
+  background-color: #252F9C;
+  border-radius: 1px;
+  padding: 5px;
+}
+
+.hero-section {
+  background-image: url('RL-main.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  color: #252F9C;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay h1 {
+  color: black;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  transition: color 0.5s ease;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 50% 50%; }
+}
+
+.overlay h1:hover {
+  background: linear-gradient(90deg, #252F9C, #7CE7BE);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientAnimation 0.5s ease forwards;
+}
+
+.overlay p {
+  padding-top: 65px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  background-color: #252F9C;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  background-color: #7CE7BE;
+  color: black;
+}
+
+.about-section {
+  background-image: url('RL-about.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.about-section, .reservation-section, .contact-section {
+  background-size: cover;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-section h2, .reservation-section h2, .contact-section h2 {
+  background-color: #252F9C;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-section p, .contact-section p {
+  color: black;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.reservation-section {
+  background-image: url('RL-reserve.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: white ;
+}
+
+.reservation-section h2 {
+  background-color: #7CE7BE;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.reservation-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.37);
+  max-width: 400px;
+  width: 100%;
+}
+
+input, select {
+  background-color: #7CE7BE;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: Montserrat;
+}
+
+input:hover, select:hover {
+  background-color: white;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #252F9C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: Montserrat;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.pay-btn {
+  margin-top: 10px;
+}
+
+.contact-section {
+  background-image: url("RL-map.png");
+  background-size: cover;
+  padding: 60px 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.contact-section h2 {
+  background-color: #252F9C;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-section p, p a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-section p a:hover {
+  color: #252F9C;
+  text-decoration: underline;
+}
+
+.map-container {
+  margin-top: 30px;
+}
+
+footer {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  .header-container {
+    align-items: center; /* Center content in mobile view */
+}
+
+.header-content h1 {
+    font-size: 1.8rem; /* Adjust title size for mobile */
+}
+
+.nav-list {
+  flex-direction: column;
+  align-items: center; /* Center nav items */
+  gap: 10px; /* Reduce gap for better alignment */
+  width: 100%; /* Full-width for nav list */
+}
+
+.nav-list li {
+  margin: 0; /* Remove any margin */
+}
+
+.hero-section {
+  height: 70vh; /* Adjust hero section height */
+}
+
+.overlay h1 {
+  font-size: 2.5rem; /* Adjust overlay heading size */
+}
+
+.overlay p {
+  font-size: 1rem; /* Adjust overlay paragraph size */
+}
+  .cta-btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+  }
+
+  .about-section, .reservation-section, .contact-section {
+      padding: 30px 10px;
+  }
+
+  .about-section h2, .reservation-section h2, .contact-section h2 {
+      font-size: 2rem;
+  }
+
+  .about-section p {
+      font-size: 1rem;
+  }
+
+  form {
+      padding: 20px;
+  }
+
+  input, select, button {
+      font-size: 0.9rem;
+  }
+}

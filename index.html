@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rathore Library</title>
+    <link rel="icon" type="image/x-icon" href="RL-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-content">
+                <img src="RL-logo.png" alt="Rathore Library Logo" class="logo">
+                <h1>Rathore Library</h1>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reservation">Seat Reservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero-section">
+        <div class="overlay">
+            <h1>Rathore Library</h1>
+            <p>Your peaceful corner for books, learning, and inspiration.</p>
+            <a href="#reservation" class="cta-btn">Reserve a Seat</a>
+        </div>
+    </div>
+    <section id="about" class="about-section">
+        <h2>About Rathore Library</h2>
+        <p>Rathore Library offers the Kunwa community extensive materials and a comfortable environment. Since our foundation in 2024, we’ve been a valuable resource for our patrons, providing access to ideas, information, and experiences for people of all ages, abilities, and means.</p>
+    </section>
+    <section id="reservation" class="reservation-section">
+        <h2>Reserve a Seat</h2>
+        <div class="reservation-form-container">
+            <form id="reservationForm" action="https://formspree.io/f/meoqekea" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                <label for="phone">Your Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                <label for="seat">Select a seat:</label>
+                <select id="seat" name="seat" required>
+                    <option value="" disabled selected>Choose seat</option>
+                    <option value="1">Seat 1</option>
+                    <option value="2" disabled>Seat 2 — Yash Darji</option>
+                    <option value="3">Seat 3</option>
+                    <option value="4">Seat 4</option>
+                    <option value="5">Seat 5</option>
+                    <option value="6">Seat 6</option>
+                    <option value="7">Seat 7</option>
+                    <option value="8">Seat 8</option>
+                    <option value="9">Seat 9</option>
+                    <option value="10">Seat 10</option>
+                    <option value="11">Seat 11</option>
+                    <option value="12">Seat 12</option>
+                    <option value="13" disabled>Seat 13 — Sachin Tailor</option>
+                    <option value="14">Seat 14</option>
+                    <option value="15">Seat 15</option>
+                </select>
+                <label for="date">Reservation Date:</label>
+                <input type="date" id="date" name="date" min="2025-03-01" max="2025-12-31" required>
+                <button type="submit" class="reserve-btn">Reserve Seat</button>
+            </form>
+            <a href="upi://pay?cu=INR&pa=adityasinghrathore.06@oksbi&pn=Rathore Library&am=600" class="pay-link"><button type="button" class="pay-btn">Pay Now</button></a>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:kbsr.80@gmail.com">kbsr.80@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919983891008">+91 9983891008</a></p>
+        <p>Address: Rathore Library, Near Kunwa Police Station, Kunwa, Dungarpur, Rajasthan, India</p>
+        <div class="map-container">
+            <iframe src="https://maps.google.com/maps?q=Rathore%20library,%20bhachar&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="250" frameborder="0"></iframe>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Rathore Library. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
